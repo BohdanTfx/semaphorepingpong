@@ -25,6 +25,7 @@ public class Worker implements Runnable {
                 System.out.println("ping " + threadName);
                 System.out.println("PPPOOONNNGGG " + threadName);
                 SEMAPHORE.release();
+                Thread.sleep(20);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
